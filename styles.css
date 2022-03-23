@@ -3,6 +3,7 @@ body {
     background-color: #d3c0b48e;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
 }
 
 #form {
@@ -16,8 +17,18 @@ body {
 
 #result {
     margin-top: 15px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: black solid 1px;
     background-color: white;
 } 
+
+header {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 15px;
+}
