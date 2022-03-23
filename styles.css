@@ -1,3 +1,23 @@
 body {
-    margin: 10px; 
+    margin: 20px; 
+    background-color: #d3c0b48e;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#form {
+    display: flex;
+}
+
+#course-search, #students-search {
+    border-radius: 5px;
+    border: black solid 1px;
+}
+
+#result {
+    background-color: white;
+    border: solid black 1px;
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 15px;
+} 
