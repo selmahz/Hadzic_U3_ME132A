@@ -1,13 +1,8 @@
 body {
     margin: 20px; 
     background-color: #d3c0b48e;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
-}
-
-#form {
-    display: flex;
 }
 
 #course-search, #students-search {
@@ -27,8 +22,36 @@ header {
     font-size: 17px;
     font-style: italic;
     font-weight: bold;
+    
 }
 
 h3 {
     font-size: 15px;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px;
+    padding: 10px;
+}
+
+#courses > div {
+    text-align: center;
+}
+
+.done {
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(179, 230, 179);
+}
+
+.notdone {
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    opacity: 40%;
 }
