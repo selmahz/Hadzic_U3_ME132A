@@ -1,25 +1,32 @@
 body {
     margin: 20px; 
-    background-color: #d3c0b48e;
+    background-color: #c7c7c791;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
 }
 
 #course-search, #students-search {
-    border-radius: 5px;
     border: black solid 1px;
+}
+
+form, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 15px;
+    padding: 15px;
 }
 
 #result {
     margin-top: 15px;
     padding: 10px;
-    border-radius: 5px;
-    border: black solid 1px;
     background-color: white;
-} 
+    border-bottom: solid 1px black;
+}
 
 header {
-    font-size: 17px;
+    font-size: 19px;
     font-style: italic;
     font-weight: bold;
     
@@ -27,6 +34,11 @@ header {
 
 h3 {
     font-size: 15px;
+}
+
+#p2 {
+    opacity: 30%;
+    text-align: center;
 }
 
 #courses {
@@ -42,16 +54,14 @@ h3 {
 
 .done {
     border: black solid 1px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    background-color: rgb(179, 230, 179);
+    margin: 3px;
+    padding: 2px;
+    background-color: rgba(179, 230, 179, 0.705);
 }
 
 .notdone {
     border: black solid 1px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 3px;
     opacity: 40%;
 }
