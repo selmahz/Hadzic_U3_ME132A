@@ -43,7 +43,7 @@ let responsibleBox = []
         let div = document.createElement("div")
         if (DATABASE.teachers[i].teacherId == courses.courseResponsible) {
             let text = div.innerHTML = `
-            <div class="responsibleteacher"><h2>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName} (${DATABASE.teachers[i].post})</h2>`
+            <div id="responsibleteacher"><h2>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName} (${DATABASE.teachers[i].post})</h2>`
             responsibleBox.push(text);
 
         } 
@@ -51,6 +51,30 @@ let responsibleBox = []
     return responsibleBox.toString().split(",").join(""); 
 }     
 
+
+function findTeachers(courses) {
+    let teacherBox = [];
+    for (let i = 0; i < DATABASE.teachers.length; i++) {
+        let div = document.createElement("div")
+        if (DATABASE.teachers[i].teacherId == courses.teachers[0]) {
+            let text = div.innerHTML = `
+            <div id="findteacher"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
+            teacherBox.push(text);
+        } else if (DATABASE.teachers[i].teacherId == courses.teachers[1]) {
+            let text = div.innerHTML = `
+            <div id="findteacher"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
+            teacherBox.push(text);
+        } else if (DATABASE.teachers[i].teacherId == courses.teachers[2]) {
+            let text = div.innerHTML = `
+            <div id="findteacher"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
+            teacherBox.push(text);
+        } 
+    }
+    return teacherBox.toString().split(",").join("");
+}
+
+//students: en loop som loopar igenom studenter, i den loopen loopa igenom den studentens kurser så det blir student[i].courses.lenght 
+//i den loopen ska vi ha en ifsats som kollar om sutdents[i].courses[i].courseId == courses.courseId 
 
 
 function searchCourse() {
