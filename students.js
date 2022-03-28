@@ -10,12 +10,13 @@ function renderStudent(id) {
     let student = DATABASE.students[id];
     div.id = "result";
     div.innerHTML =
-    `<header>${student.firstName} ${student.lastName} (total credits: ${totalCredits(student)}) </header>
+    `<header><u>${student.firstName} ${student.lastName} (total credits: ${totalCredits(student)}) </u></header>
     <div>
         <h3>Courses:</h3>
         <div id="courses">
             ${renderCourses(student)}
         </div>
+        <div id="border"></div>
     </div>`
 
     return div;

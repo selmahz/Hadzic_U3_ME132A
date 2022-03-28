@@ -7,7 +7,7 @@ function renderCourse(id) {
     let courses = DATABASE.courses[id];
     div.classList = "result";
     div.innerHTML =
-    `<header>${courses.title} (total credits: ${courses.totalCredits})</header>
+    `<header><u>${courses.title} (total credits: ${courses.totalCredits})</u></header>
     <div>
         <h3>Course Responsible:</h3>
         <div id="resteachers">${findResponsible(courses)}</div>
