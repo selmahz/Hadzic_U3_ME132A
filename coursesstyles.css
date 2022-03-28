@@ -95,3 +95,9 @@ h3 {
 #border {
     border-bottom: 1px black solid;
 }
+
+.darkMode {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black;
+  }
+  

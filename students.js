@@ -114,7 +114,8 @@ function submit () {
 
 input.addEventListener("submit", submit);
 
- function checkDarkMode () {
+//darkmode
+/*function checkDarkMode () {
     const darkMode = localStorage.getItem("darkMode");
     if (darkMode == null) {
     localStorage.setItem("darkMode", JSON.stringify(false));
@@ -126,7 +127,7 @@ input.addEventListener("submit", submit);
     } else {
         element.classList.remove("darkMode");
     }
-}
+} */
 
 function darkMode() {
     var element = document.body;
@@ -141,7 +142,10 @@ function darkMode() {
         element.classList.add("darkMode");
         localStorage.setItem("darkMode", JSON.stringify(true));
     }
-} 
+}
+
+const btn = document.querySelector('.btn')
+btn.addEventListener('click', darkMode);
 
 // kallar (initierar) på hemsidan, alltså får fram alla studenter
 showStudents(DATABASE.students);
