@@ -12,12 +12,10 @@ function renderStudent(id) {
     div.innerHTML =
     `<header>${student.firstName} ${student.lastName} (total credits: ${totalCredits(student)}) </header>
     <div>
-        <div id="studentcourses">
         <h3>Courses:</h3>
         <div id="courses">
             ${renderCourses(student)}
         </div>
-    </div>
     </div>`
 
     return div;

@@ -9,21 +9,17 @@ function renderCourse(id) {
     div.innerHTML =
     `<header>${courses.title} (total credits: ${courses.totalCredits})</header>
     <div>
-        <div id="studentcourses">
-
         <h3>Course Responsible:</h3>
-        <div id="teachers">
-        ${findResponsible(courses)}
-        </div>
-
+        <div id="resteachers">${findResponsible(courses)}</div>
+        <br>
         <h3>Teachers:</h3>
-        ${findTeachers(courses)}
-        <div id="teachers">
-        </div>
-        <div id="students"><h3>Students:</h3>
-        ${findStudents(courses)}
-        </div>
-    </div>
+        <div id="teachers">${findTeachers(courses)}</div>
+        <br>
+        <h3>Students:</h3>
+        <div id="students">
+        ${findStudents(courses)}</div>
+        <br>
+        <div id="border"></div>
     </div>
           `
     return div;

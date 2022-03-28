@@ -9,6 +9,7 @@ body {
     border: black solid 1px;
 }
 
+
 form, h1 {
     display: flex;
     justify-content: center;
@@ -29,7 +30,12 @@ header {
     font-size: 19px;
     font-style: italic;
     font-weight: bold;
-    
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 #p2 {
@@ -37,11 +43,41 @@ header {
     text-align: center;
 }
 
+#students {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px;
+    padding: 10px;
+}
+
+#responsibleteacher {
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+    background-color: pink;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#findteachers {
+    border: black solid 1px;
+    margin: 3px;
+    margin-left: 12px;
+    padding: 2px;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .done {
     border: black solid 1px;
     margin: 3px;
     padding: 2px;
     background-color: rgba(179, 230, 179, 0.705);
+    text-align: center;
 }
 
 .notdone {
@@ -49,4 +85,9 @@ header {
     padding: 2px;
     margin: 3px;
     opacity: 40%;
+    text-align: center;
+}
+
+#border {
+    border-bottom: 1px black solid;
 }
