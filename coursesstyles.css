@@ -1,0 +1,52 @@
+body {
+    margin: 20px; 
+    background-color: #c7c7c791;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+#course-search, #students-search {
+    border: black solid 1px;
+}
+
+form, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: solid 1px black;
+}
+
+header {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+#p2 {
+    opacity: 30%;
+    text-align: center;
+}
+
+.done {
+    border: black solid 1px;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgba(179, 230, 179, 0.705);
+}
+
+.notdone {
+    border: black solid 1px;
+    padding: 2px;
+    margin: 3px;
+    opacity: 40%;
+}
