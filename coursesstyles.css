@@ -41,6 +41,8 @@ h3 {
 #p2 {
     opacity: 30%;
     text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
 
 #students {
@@ -51,10 +53,12 @@ h3 {
 }
 
 #responsibleteacher {
-    border: black solid 1px;
-    margin: 10px;
-    padding: 10px;
     background-color: pink;
+    width: 20vw;
+    border: black solid 1px;
+    margin: 3px;
+    margin-left: 22px;
+    padding: 2px;
     width: 20vw;
     display: flex;
     justify-content: center;
@@ -64,7 +68,7 @@ h3 {
 #findteachers {
     border: black solid 1px;
     margin: 3px;
-    margin-left: 12px;
+    margin-left: 22px;
     padding: 2px;
     width: 20vw;
     display: flex;
@@ -73,11 +77,11 @@ h3 {
 }
 
 .done {
-    border: black solid 1px;
     margin: 3px;
     padding: 2px;
     background-color: rgba(179, 230, 179, 0.705);
     text-align: center;
+    border: black solid 1px;
 }
 
 .notdone {

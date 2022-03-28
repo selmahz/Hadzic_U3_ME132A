@@ -47,29 +47,25 @@ let responsibleBox = []
     return responsibleBox.toString().split(",").join(""); 
 }     
 
-
 function findTeachers(courses) {
     let teacherBox = [];
     for (let i = 0; i < DATABASE.teachers.length; i++) {
-        let div = document.createElement("div")
-        if (DATABASE.teachers[i].teacherId == courses.teachers[0]) {
+        let div = document.createElement("div");
+        for ( let x = 0; x < courses.teachers.length; x++)
+        if (DATABASE.teachers[i].teacherId == courses.teachers[x]) {
             let text = div.innerHTML = `
-            <div id="findteachers"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
+            <div id="findteachers"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName} (${DATABASE.teachers[i].post})  </h4></div>`
             teacherBox.push(text);
-        } else if (DATABASE.teachers[i].teacherId == courses.teachers[1]) {
+        } else if (DATABASE.teachers[i].teacherId == courses.teachers[x]) {
             let text = div.innerHTML = `
-            <div id="findteachers"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
+            <div id="findteachers"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName} (${DATABASE.teachers[i].post})  </h4></div>`
             teacherBox.push(text);
-        } else if (DATABASE.teachers[i].teacherId == courses.teachers[2]) {
-            let text = div.innerHTML = `
-            <div id="findteachers"><h4>${DATABASE.teachers[i].firstName} ${DATABASE.teachers[i].lastName}</h4></div>`
-            teacherBox.push(text);
-        } 
+        }
     }
     return teacherBox.toString().split(",").join("");
-}
+} 
 
-function findStudents(courses) {
+ function findStudents(courses) {
     let studentBox = [];
     for (let i = 0; i < DATABASE.students.length; i++) {
         let div = document.createElement("div");
@@ -87,7 +83,7 @@ function findStudents(courses) {
         }
     }
     return studentBox.toString().split(",").join("");
-}
+} 
 
 
 function searchCourse() {
