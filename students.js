@@ -1,10 +1,7 @@
 "use strict";
 
-//skapar globala variablar i databasen 
 let students = DATABASE.students;
 
-// skapar div med id result som innehåller elevens för och efternamn samt totala credits.
-// även en div som visar repsketive elevs kurser.
 function renderStudent(id) {
     let div = document.createElement("div");
     let student = DATABASE.students[id];
@@ -22,7 +19,6 @@ function renderStudent(id) {
     return div;
 }
 
-// skapar en funktion som räknar ut respektive students totala credits
 function totalCredits(student) {
     let credits = []
     for (let course of student.courses) {
@@ -44,7 +40,6 @@ function showStudents (students) {
     }
 }
 
-// funktion och loop som skapar div element för studenter
 function renderCourses (student){
     let courseData = DATABASE.courses;
     let courses = [];
@@ -57,8 +52,6 @@ function renderCourses (student){
    for (let i = 0; i < courses.length; i++) {
        let div = document.createElement("div");
 
-        // delat upp vilka kurser som är klara och vilka som inte är klara - innehåller titel av kurser, när eleven började kursen,
-        // samt hur många poäng av möjliga studenten har i olika kurser 
        if (student.courses[i].passedCredits == courseData[courses[i].courseId].totalCredits) {
            let text = div.innerHTML = 
            `<div class="done"><h4>${courses[i].title}</h4>
@@ -115,6 +108,7 @@ function submit () {
 input.addEventListener("submit", submit);
 
 //darkmode
+
 /*function checkDarkMode () {
     const darkMode = localStorage.getItem("darkMode");
     if (darkMode == null) {
